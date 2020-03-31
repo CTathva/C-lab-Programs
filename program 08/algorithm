@@ -1,0 +1,64 @@
+PURPOSE : Multiply 2 matrices
+INPUT: Two matrices
+OUTPUT : Multiplication of 2 matrices
+
+START
+
+	STEP 1: [Read the order of matrix A]
+		Read m,n
+
+	STEP 2: [Read the order of matrix B]
+		Read p,q
+
+	STEP 3 : [Check for compatible]
+		If n!=p
+			Print matrix multiplication not possible
+			Goto step 10
+
+	STEP 4 : [Read the elements of matrix A]
+		For i->0 to m-1 do
+			For j->0 to n-1 do
+				Read a[i][j]
+			End jth for loop
+		End ith for loop
+
+	STEP 5: [Read the elements of matrix B]
+		For i->0 to p-1 do
+			For j 0 to q-1 do
+				Read b[i][j]
+			End jth for loop
+		End ith for loop
+
+	STEP 6: [Compute multiplication]
+		For i->0 to m-1 do
+			For j->0 to q-1 do
+				C[i][j]-> 0
+				For k->0 to n-1 do
+					C[i][j] c[i][j]+a[i][k]*b[k][j]
+				End kth for loop
+			End jth for loop
+		End ith for loop
+
+	STEP 7: [Display matrix A]
+		For i->0 to m-1 do
+			For j->0 to n-1 do
+				Print a[i][j]
+			End jth for loop
+		End ith for loop
+
+	STEP 8: [Display matrix B]
+		For i->0 to p-1 do
+			For j->0 to q-1 do
+				Print b[i][j]
+			End jth for loop
+		End ith for loop
+
+	STEP 9: [Display matrix C]
+		For i->0 to m-1 do
+			For j 0 to n-1 do
+				Print c[i][j]
+			End jth for loop
+		End ith for loop
+
+	STEP 10: [Finished]
+STOP

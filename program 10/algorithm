@@ -1,0 +1,36 @@
+Algorithm: string operations such as compare, concatenate, string length.
+
+Purpose: To find String length, Compare two Strings, Concatenate two strings
+Input: Two strings
+Output: Length of string1
+	Concatenated String
+	Comparison of two strings
+START
+	STEP 1: [Store two strings in Str1 and Str2]
+		Str1=String1 and Str2=String2
+
+	STEP 2:[To find String Length]
+		initialize i to 0
+		while(str[i] not equal to 0)
+			increment i by 1
+
+	STEP 3: [To Compare two Strings]
+		initialize i to 0
+		while (str1[i] is equal to str2[i])
+			if (str1[i] is equal to null)
+				break;
+			increment i by 1
+			return str1[i]-str2[i];
+
+	STEP 4: [To Concatenate two Strings]
+		initialize i to 0 and j to 0
+		while (str1[i] not equal to null)
+			increment i by 1
+		while (str2[j] not equal to null)
+			str1[i++]=str2[j++];
+
+	STEP 5: [Output the results]
+		The length of the String
+		res1=Comparision of two Strings
+		res2= Concatenated String
+STOP

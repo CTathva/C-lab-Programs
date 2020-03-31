@@ -1,0 +1,24 @@
+Purpose:To check whether a given number is prime or not.
+Input:A number
+Output:Given Number is prime or not
+
+START
+	STEP 1: [Enter a positive number]
+		read n
+
+	STEP 2: [To check number is prime or not]
+		for -> i=2 to m/2
+			if m% i is equal to 0
+			return 0
+
+	STEP 3:[Display the output]
+		Print the number is NOT prime.
+
+	STEP 4: [To check number is prime or not]
+		for -> i=2 to m/2
+			if m% i is equal to 1
+			return 1
+
+	STEP 5:[Display the output]
+		Print the number is prime.
+STOP

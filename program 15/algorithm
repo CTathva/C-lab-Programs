@@ -1,0 +1,16 @@
+Purpose: To convert binary number to decimal number
+Input: Binary number
+Output: Decimal number
+
+START
+	STEP 1: [input binary number]
+		read binary number, n
+
+	STEP 2:[till n not equal to zero]
+		remainder = n%10
+		n=n/10
+		decimalnumber=decimalnumber+ remainder*pow(2,i)
+
+	STEP 3:[Output decimal number]
+		Print decimal number
+STOP

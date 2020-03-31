@@ -1,0 +1,24 @@
+Algorithm : To compute Sin(x) using Taylor series approximation
+
+Purpose: To compute sine(x) value using Taylor's series
+Input: Degree ie. Value of x
+Output : sine value for given degree
+
+START
+	Step 1:[Input value of degree]
+		Read degree
+
+	Step 2: [Convert degree to radians]
+		X=(degree *PI)/180
+
+	Step 3: [InitialCSE]
+		term =x
+		sum=term
+
+	Step 4: [Calcuate each term and add]
+		term=-term*x*x/((i-1)*i);
+		sum=sum+term;
+
+	Step 5: [Print the output]
+		Print the sine value for the given degree
+STOP

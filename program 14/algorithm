@@ -1,0 +1,28 @@
+Purpose:To find sum,mean and standard deviation of all elements in an
+array Input: An array of n elements
+Output:Print the sum,mean and standard deviation of all elements in an array 
+
+START
+	STEP 1:[ Input the no of elements]
+		Read n
+
+	STEP 2:[input array elements]
+		For <- i= 0 to n
+			Read array
+
+	STEP 3: [Calculate sum]
+		For <- i= 0 to n
+			sum=sum+ *ptr
+			increment ptr by 1
+
+	STEP 4: [Calculate mean]
+		mean=sum/n
+
+	STEP 5: [Calculate Standard deviation]
+		sumstd=sumstd + pow((*ptr - mean),2);
+		increment ptr by 1
+		std = sqrt(sumstd/n)
+
+	STEP 6:[Display output]
+		Print the sum,mean and standard deviation of all elements in an array
+STOP

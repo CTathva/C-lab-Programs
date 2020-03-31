@@ -1,0 +1,41 @@
+PURPOSE : To simulate a calculator using arithmetic expressions
+INPUT	: Enter num1 and num2
+OUTPUT	: Print the result of addition or subtraction or multiplication or division or modulus.
+
+START
+
+	Step 1: [Enter first number]
+		read num1
+
+	Step 2: [Enter Second number]
+		read num2
+
+	Step 3:[Enter Choice]
+		read choice
+
+	Step 4:[To perform addition]
+		if choice is equal to plus
+			add num1 and num2
+			print result
+
+	Step 5: [To perform subtraction]
+		if choice is equal to minus
+			subtract num2 from num1
+			print result
+
+	Step 6: [To perform multiplication]
+		if choice is equal to multiplication
+			multiply num1 and num2
+			print result
+
+	Step 7: [To perform division]
+		if choice is equal to division
+			divide num1 by num2
+			print result
+
+	Step 8: [To perform Modulus]
+		if choice is equal to modulus
+			divide num1 by num2
+			print result (remainder)
+
+STOP

@@ -1,0 +1,33 @@
+ALGORITHM : Bubble sort
+
+PURPOSE : Arranging the numbers in ascending order using bubble sort technique
+INPUT : N, interger numbers in arrary a[i]
+OUTPUT : Numbers are arranged in ascending order
+
+START
+	STEP 1: [Input number of elements]
+		Read n
+
+	STEP 2: [Input the elements/numbers into array]
+		For i->0 to n
+			Read a[i]
+		Endfor
+
+	STEP 3 : [Sorting the elements in ascending order]
+		For i->0 to n-1
+			For j->0 to n-1
+				If(a[j]>a[j+1]) then                    [Compare the adjacent elements]
+					Temp -> a[j]			[Swap these elements]
+					a[j] -> a[j+1]
+					a[j+1] -> Temp
+				endif
+			endfor
+		endfor
+
+	STEP 4: [Display the sorted elements of array]
+		For i->0 to n
+			Print a[i]
+		Endfor
+
+	STEP 5: [Finished]
+STOP

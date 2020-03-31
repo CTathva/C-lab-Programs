@@ -1,0 +1,46 @@
+Purpose : To find roots of a given quadratic equation.
+Input: Coefficients of quadratic equation a, b, c
+Output: Root1 and Root2
+
+START
+	STEP 1: [Input the values of a, b, c]
+		read a, b, c
+
+	STEP 2: [Calculate the determinant]
+		determinant = b*b-4*a*c
+
+	STEP 3: [Check for validity]
+		If a is equal to 0 and b is equal to 0
+			print “Invalid Inputs”
+
+	STEP 4: [Check for different roots]
+		If a is equal to 0
+			print “Linear equation”
+			Root1=-c/b
+			Print “Root1”
+		End if
+
+	STEP 5: [Check for real and equal roots]
+		If determinant is equal to 0
+			print “Roots are real and equal”
+			Root1= -b/(2*a)
+			Root2 = -b/(2*a)
+			Print “Root1 & Root2”
+		End if
+
+	STEP 6: [Check for real and distinct roots]
+		If determinant is greater than 0
+			Then print “Roots are real and distinct”
+			Root1= (-b+ (sqrt (fabs (determinant))))/(2*a)
+			Root2= (-b-(sqrt (fabs (determinant))))/(2*a)
+			Print “root1 and root2”
+		End if
+
+	STEP 7: [Check for imaginary roots]
+		print “Roots are imaginary”
+		Real=-b/ (2*a)
+		Imaginary=sqrt (fabs (determinant))/ (2*a)
+		print “Root1 and R oot2”
+
+	STEP 8: [Finished]
+STOP

@@ -1,0 +1,29 @@
+Purpose : To check the given integer is palindrome or not
+Input: Num
+Output : Reverse and palindrome or not
+
+START
+	STEP 1: [Input a number]
+		read num
+
+	STEP 2: [To check the given number is 4 digits or not]
+		If the number less than 999 or greater than 9999
+			print “it is not a four digit number”
+			Goto step 5
+
+	STEP 3: [Calculate the reverse of given number]
+		Temp=num
+		Loop while temp not equal to 0
+		Remainder=temp%10
+		Temp=temp/10
+		Reverse=reverse*10+remainder
+		print “reverse number”
+
+	STEP 4: [Check number is a palindrome or not]
+		If Num is equal to reverse
+			print “Num is palindrome “
+		Else
+			print “Num is not palindrome”
+
+	STEP 5: [Finished]
+STOP

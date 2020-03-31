@@ -1,0 +1,29 @@
+PURPOSE: To Implement structures to read, write, compute average- marks and the
+	students scoring above and below the average marks for a class of N students.
+Input: number of Students, name ,marks1,marks2,marks3
+Output: Average marks and printing the students scoring above and below the average marks
+
+START
+	STEP 1: [input number of students]
+		Read n
+
+	STEP 2: [input details of students ie.name amd marks]
+		Read name,m1,m2,m3
+
+	STEP 3: [ Calculate total and average]
+		For <- i=0 to n
+			s[i].total=(s[i].m1+s[i].m2+s[i].m3);
+			T=T+s[i].total;
+			AVG=T/N;
+
+	STEP 4: [Find students above and below average]
+		for <-i=0 to n
+		if 
+			aboveavg[j]=i;
+			j++;
+		else
+			belowavg[k]=i;
+			k++;
+
+	STEP 5:[Finished]
+STOP

@@ -1,0 +1,29 @@
+Algorithm: Square root
+
+Purpose : To find square root of a given number without using inbuilt functions
+Input: num
+Output : Square root of a given number
+
+START
+	STEP 1: [Initialize]
+		temp <- 0
+
+	STEP 2: [Enter a number]
+		Read num
+
+	STEP 3: [Divide the num by 2]
+		square_root=num/2
+
+	STEP 4: [Calculate a square root of a number]
+		While (square_root not equal to temp)
+			temp <- square_root
+			square_root <- (num/square_root+square_root)/2
+
+	STEP 5: [Display results]
+		print “square root”
+
+	STEP 6: [Display result using the library function]
+		print” square root of a number is”, sqrt (num)
+
+	STEP 7: [Finished]
+STOP

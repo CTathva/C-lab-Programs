@@ -1,0 +1,29 @@
+PURPOSE: Read The Name Of The User, Number Of Units Consumed And Print
+INPUT: name [10], unit
+OUTPUT: Print the charges for total number of units consumed
+
+START
+	STEP 1: [Input a name and units]
+		read name and unit
+
+	STEP 2: [Initialization]
+		Metercharge=100
+
+	STEP3: [To check electricity unit is less than or equal to 200 and calculate metercharge] 
+		If unit less than or equal to 200
+			metercharge= metercharge+(unit*.80)
+
+	STEP 4: [Else check unit is greater than 200 and greater than 300 and calculate metercharge]
+		If unit greater than 200 and unit greater than or equal to 300
+			metercharge= metercharge+(200*0.80)+((unit-200)*0.90))
+
+	STEP 5: [Else check unit is greater than 300 and calculate metercharge]
+		If unit is greater than 300
+			metercharge= metercharge+(200*0.80)+(300*0.90)+((unit-300)*1))
+
+	STEP 6: [To check and calculate if meter charge is greater than 400 ]
+		If metercharge greater than or equal to 400
+			metercharge=metercharge+(metercharge*0.15);
+
+	STEP 7: [Finished]
+STOP

@@ -1,0 +1,21 @@
+	If unit less than or equal to 200
+			
+		metercharge= metercharge+(unit*.80)
+
+
+	
+	If unit greater than 200 and unit greater than or equal to 300
+			
+		metercharge= metercharge+(200*0.80)+((unit-200)*0.90))
+
+
+
+	If unit is greater than 300
+	
+		metercharge= metercharge+(200*0.80)+(300*0.90)+((unit-300)*1))
+
+	
+
+	If metercharge greater than or equal to 400
+		
+		metercharge=metercharge+(metercharge*0.15);

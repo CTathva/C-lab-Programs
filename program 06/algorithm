@@ -1,0 +1,46 @@
+PURPOSE: Implement Binary search
+INPUT: n, a[50], key
+OUTPUT: key is present at the position or key not found
+
+START
+	STEP 1: [Read no of elements]
+		Read n
+
+	STEP 2: [Read the elements of the array]
+		For <- i=0 to n
+			Read a[i]
+		End ith for loop
+
+	STEP 3: [Read the elements to be searched]
+		Read key
+
+	STEP 4: [Initiliazation]
+		low = 0;
+		high = n-1;
+
+	STEP 5: [ Check whearther low is less than of equal to high and calculate mid)
+		while <- low <=high
+		mid= (low+ high)/2;
+
+	STEP 6: [Check if mid is equal to key )
+		If a[mid] is equal to key
+
+	STEP 7: [print the key position]
+		Print key is present at the position mid+1
+
+	STEP 8: [if key found initialize found is 1]
+		found=1
+
+	STEP 9: [check if mid is greater than key and calculate]
+		If mid is greater than key
+		high = mid-1;
+
+	STEP 10: [Else]
+		low = mid+1;
+
+	STEP 11: [Check if key is not found]
+		If not found
+		Print key not found
+
+	STEP 12:[Finished]
+STOP
